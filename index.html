@@ -151,7 +151,6 @@
         <div class="container"> 
             <div class="row">
 
-
                 <div class="col-md-3 col-sm-4 col-xs-12 container">
                     <br />
                     <br />
@@ -187,7 +186,7 @@
                     My group is interested in the tradeoffs between model utilities/convergence and systems efficiency (e.g., in terms of memory, compute, and communication costs), particularly in large-scale settings (e.g., large generative models). We improve such tradeoffs by designing cheaper optimizers, exploring new distributed training algorithms, and making better use of data from different distributions. 
                     <br />
                     <br />
-                    We are also interested in other critical aspects of machine learning training and deployment beyond accuracy and efficiency, such as privacy and robustness. We propose varying definitions that tailor practical applications, study the interconnections between (various measurements of) privacy, robustness, generalization, memorization, and reasoning, and design provable algorithms to solve the objectives at scale.
+                    We are also interested in other critical aspects of machine learning training and deployment, such as reasoning, privacy, and robustness. We propose varying definitions that tailor practical applications, design provable algorithms that scale, and study the interconnections between (various measurements of) privacy, generalization, memorization, and reasoning.
                     <!--My research generally centers around large-scale machine learning and optimization. Specific topics include:
                		</p>
                     
@@ -216,6 +215,111 @@
 
      <!-- // ABOUT BEGIN -->
     <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-md-12 text-left">
+                        <h2>News</h2>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 30px;">
+
+                        <!-- Always visible items -->
+
+                        <front>2026: Federation over Text: Insight Sharing for Multi-Agent Reasoning. Check out our <a href="https://arxiv.org/pdf/2604.16778">preprint!</a></front>
+                        </br >
+
+                        <front>2026: Some recent work: <a href="https://arxiv.org/abs/2602.18002">asynchronous training</a> under heavy-tailed noise while tolerating unbounded staleness, model merging/post-processing for dynamic privacy changes (to be present at TPDP),
+                        and <a href="https://arxiv.org/abs/2511.20497">understanding empirical privacy properties</a> for synthetic network data</front>
+                        </br >
+
+                        <front>2026: Our <a href="https://arxiv.org/abs/1908.07873">FL survey paper</a> (published in 2020) won the <a href="https://signalprocessingsociety.org/newsletter/2026/01/2025-ieee-signal-processing-society-awards-winners">IEEE Signal Processing Magazine Best Paper Award</a>.</front>
+                        </br >
+
+                        <front>2026: Attending the <a href="https://simons.berkeley.edu/programs/federated-collaborative-learning">Federated and Collaborative Learning</a> program at the Simons Institute as a long-term participant.</front>
+                        </br >
+
+                        <front>2025: Talk at Princeton Alg-ML Seminar; multiple works on <a href="https://www.arxiv.org/abs/2511.10859">zeroth-order</a> or <a href="https://arxiv.org/abs/2410.18117">adaptive optimization</a>, and <a href="https://www.arxiv.org/abs/2512.12008">efficient reasoning</a> are presented at NeurIPS.</front>
+                        </br >
+
+
+                        <div id="news-extra" style="display: none;">
+
+                            <front>2025: Thanks, Google, for the generous support on cloud credits and research funding.</front>
+                            </br >
+
+                            <front>2025: Talks on our recent works on {memory, compute, and communication}-efficient adaptive optimization at UChicago, Northwestern, and ICCOPT.</front>
+                            </br >
+                            <front>2025: Our <a href="https://arxiv.org/abs/2502.04164">BiClip optimizer</a>, <a href="https://arxiv.org/abs/2502.04164">tilted sharpness-aware minimization</a>, and <a href="https://arxiv.org/abs/2409.19431">exponential tilting generalization</a> works have been accepted by ICML.</front>
+                            </br >
+                            <front>2025: Teaching <a href="https://sites.google.com/view/uchicago-35401-distributedml/home">CMSC 35401: Topics in Machine Learning: Distributed and Federated Learning</a> in Spring 2025.</front>
+                            </br >
+                            <front>2025: Multiple works will be presented at the ICLR main conference (<a href="https://openreview.net/forum?id=uXbqFnQfH4">many-objective optimization</a>) and workshops (<a href="https://arxiv.org/abs/2502.04164">optimization under heavy-tailed noise</a> and private RAG).</front>
+                            </br >
+                            <front>2025: Invited to serve on an NSF panel and as jury member for the <a href="https://www.sprind.org/en/actions/challenges/composite-learning">Composite Learning Challenge</a> by Germany's Federal Agency for Disruptive Innovation.</front>
+                            </br >
+                            <front>2025: Selected into <a href="https://aaai.org/conference/aaai/aaai-25/new-faculty-highlights-program/">AAAI New Faculty Highlights 2025</a> and gave a talk at AAAI.</front>
+                            </br >
+                            <front>2025: Serving as a Publication Co-Chair for <a href="https://mlsys.org/">MLSys 2025</a>.</front>
+                            </br >
+                            <front>2024-2025: Gave talks on <a href="https://arxiv.org/abs/2109.06141">tilted losses</a> at TTIC, CAM, UBC, and SFU.</front>
+                            </br >
+                            <front>2024: Cloud credit support from the NAIRR Pilot program.</front>
+                            </br >
+                            <front>2024: New <a href="https://arxiv.org/abs/2410.22656">preprint</a> on tilted sharpness-aware minimization, where we explore a soft and smoothed version of SAM.</front>
+                            </br >
+                            <front>2024: Teaching CMSC 25300/35300: Mathematical Foundations of Machine Learning in 2024 Fall.</front>
+                            </br >
+                        </div>
+
+                        <!-- Toggle button -->
+                        <div style="margin-buttom: 30px;">
+                            <a href="#" id="news-toggle" onclick="toggleNews(event)" style="color: green; font-size: 14px;">&#9660; Show more</a>
+                        </div>
+
+                        &nbsp&nbsp
+                        &nbsp&nbsp
+                        &nbsp&nbsp
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+    .news-item {
+        padding: 4px 0;
+        border-bottom: 1px solid #f0f0f0;
+        margin-bottom: 4px;
+    }
+    #news-toggle {
+        text-decoration: none;
+        font-weight: 600;
+    }
+    #news-toggle:hover {
+        color: pink !important;
+        text-decoration: underline;
+    }
+    </style>
+
+    <script>
+    function toggleNews(e) {
+        e.preventDefault();
+        var extra = document.getElementById('news-extra');
+        var btn = document.getElementById('news-toggle');
+        if (extra.style.display === 'none') {
+            extra.style.display = 'block';
+            btn.innerHTML = '&#9650; Show less';
+        } else {
+            extra.style.display = 'none';
+            btn.innerHTML = '&#9660; Show more';
+        }
+    }
+    </script>
+
+    <!-- <section id="news">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -265,6 +369,7 @@
             </div>
         </div>
     </section>
+    -->
 
     
     <section id="group">
@@ -301,10 +406,6 @@
                          <front>Junfei Sun</front>
                          </br >
                      </div>
-
-                    &nbsp&nbsp
-                    &nbsp&nbsp
-                    &nbsp&nbsp
 
                 </div>
             </div>
@@ -348,6 +449,22 @@
                                     <h3> Manuscripts</h3>
                                 </div>
 
+                                <div style="margin-bottom:10px" class="all sel manu mix col-md-12 col-sm-6 col-xs-12">
+                                    <font><B>Federation over Text: Insight Sharing for Multi-Agent Reasoning</B></font>
+                                    <br />
+                                    <font color="grey">Dixi Yao, Tahseen Rabbani, </font> Tian Li
+                                    <br />
+                                    <a href="https://arxiv.org/abs/2604.16778">[Arxiv]</a>
+                                </div>
+
+                                <div style="margin-bottom:10px" class="all manu mix col-md-12 col-sm-6 col-xs-12">
+                                    <font><B>Asynchronous Heavy-Tailed Optimization</B></font>
+                                    <br />
+
+                                    <font color="grey">Junfei Sun, Dixi Yao, Xuchen Gong, Tahseen Rabbani, Manzil Zaheer, </font> Tian Li
+                                    <br />
+                                    <a href="https://arxiv.org/abs/2602.18002">[Arxiv]</a>
+                                </div>
                                 
 
                                  <div style="margin-bottom:10px" class="all manu mix col-md-12 col-sm-6 col-xs-12">
@@ -803,20 +920,30 @@
                         <h2>Talks</h2>
                     </div>
 
+
                     <div style="margin-bottom:10px" class="col-md-12 col-sm-6 col-xs-12">
-                        <font><B>Learning in Heterogeneous Networks: Optimization and Fairness</B></front>
+                        <font><B>Scale Learning and Reasoning Across Heterogeneous Gradients and Semantics</B></front>
                         <br />
-                        <font color="grey">Federated Learning One World (FLOW) Seminar</font>
+                        <font color="grey">Workshop on Learning from Heterogeneous Sources, Simons Institute, 2026</font>
                         <br />
-                        <a href="https://www.youtube.com/watch?v=l-wrDmYj2Uw">[Video]</a>
+                        <a href="https://simons.berkeley.edu/talks/tian-li-university-chicago-2026-02-23">[Video]</a>
                     </div>
+
 
                     <div style="margin-bottom:10px" class="col-md-12 col-sm-6 col-xs-12">
                         <font><B>Fair and Robust Federated Learning Through Personalization</B></front>
                         <br />
-                        <font color="grey">TrustML Young Scientists Seminar</font>
+                        <font color="grey">TrustML Young Scientists Seminar, 2022</font>
                         <br />
                         <a href="https://www.youtube.com/watch?v=PD8kByxC6-Q">[Video (the first half)]</a>
+                    </div>
+
+                    <div style="margin-bottom:10px" class="col-md-12 col-sm-6 col-xs-12">
+                        <font><B>Learning in Heterogeneous Networks: Optimization and Fairness</B></front>
+                        <br />
+                        <font color="grey">Federated Learning One World (FLOW) Seminar, 2020</font>
+                        <br />
+                        <a href="https://www.youtube.com/watch?v=l-wrDmYj2Uw">[Video]</a>
                     </div>
                     
                     &nbsp&nbsp
